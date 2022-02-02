@@ -2,7 +2,6 @@
 import http.client
 import json
 from urllib.parse import quote
-from bs4 import BeautifulSoup
 
 conn = http.client.HTTPSConnection("ieeexplore.ieee.org")
 
