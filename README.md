@@ -1,6 +1,6 @@
 # Paper Search Engine Spider
 
-# Version 0.1.0 — Updated 2022-2-3
+# Version 0.1.0 — Updated 2022-2-2
 
 An Object-oriented paper search crawler 
 
