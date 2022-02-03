@@ -26,7 +26,7 @@ An Object-oriented paper search crawler
 
 *If you are runing this script with Windows, Make sure you open the file with Administrator (You can use “Ctrl + Shift + [Double Click/Enter]” to start with the file )
 
-1. Run [run.py](http://run.py)  and follow the command line
+1. Run [run.py](https://github.com/Royc30ne/Paper_Search_Engine_Spider/blob/main/run.py)  and follow the command line
 2. Choose Your Search Engine
 3. Type your search content
 4. Wait with a cup of coffee
