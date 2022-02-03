@@ -8,15 +8,15 @@ An Object-oriented paper search crawler
 
 ## Features:
 
-1. You can search papers via command line interactions
-2. You can search papers on IEEE Xplore Search Engine
-3. It will return a *.ris file contain all the result paper
+1. You can search paper via command-line interactions
+2. You can search paper on IEEE Xplore Search Engine
+3. It will return a *.ris file contains all the paper info
 
-## To be fixed:
+## To Be Fixed:
 
 1. Auto Cookie Fetch will be added in the future
 2. More paper search engine will be added in the future (PubMed | ACM Digit Library)
-3. Web based script will be added in the future
+3. A Web-based script will be added in the future
 
 ## How to Use :
 
@@ -26,7 +26,7 @@ An Object-oriented paper search crawler
 
 *If you are runing this script with Windows, Make sure you open the file with Administrator (You can use “Ctrl + Shift + [Double Click/Enter]” to start with the file )
 
-1. Run [run.py](http://run.py)  and follow the command line
+1. Run [run.py](https://github.com/Royc30ne/Paper_Search_Engine_Spider/blob/main/run.py)  and follow the command line
 2. Choose Your Search Engine
 3. Type your search content
 4. Wait with a cup of coffee
