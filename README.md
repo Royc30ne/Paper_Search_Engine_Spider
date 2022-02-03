@@ -12,7 +12,7 @@ An Object-oriented paper search crawler
 2. You can search paper on IEEE Xplore Search Engine
 3. It will return a *.ris file contains all the paper info
 
-## To be fixed:
+## To Be Fixed:
 
 1. Auto Cookie Fetch will be added in the future
 2. More paper search engine will be added in the future (PubMed | ACM Digit Library)
