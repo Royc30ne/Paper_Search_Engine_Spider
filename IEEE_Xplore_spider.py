@@ -18,6 +18,7 @@ class XploreSpider:
         preRun = self.getSearchJson(1)
         self.totalPage = self.getTotalPage(preRun)
         print("Found Page: " + str(self.totalPage) + "; Found articles: " + str(self.getNumbersOfArticles(preRun)))
+        self.articleNumbers = str(self.getNumbersOfArticles(preRun))
         if os.path.exists("json_temp") == False:
             os.mkdir("json_temp")
         if os.path.exists("IEEE_RIS_Dir") == False:
@@ -25,23 +26,30 @@ class XploreSpider:
 
     # Operations to find json files and generate ris files
     def operate(self):
+        if (self.articleNumbers == '0'):
+            print("No Articles Found! Please Try Again!")
+            return
         print("Fetching Json from IEEE Xplore")
+        fileName = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
         for i in range(self.totalPage):
             print("Fetching : " + str(i + 1) + " out of " + str(self.totalPage))
             json_data = self.getSearchJson(i + 1)
             saveJson(json_data, i + 1)
         print("Processing Json Files and Generating RIS Files")
         for i in range(self.totalPage):
-            fileName = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
             rif_output = self.outputRIS(self.getNumbers(i + 1))
-            with open('IEEE_RIS_Dir/IEEE_Xplore_' + fileName + '.ris', 'w', encoding='utf-8') as f:
+            with open('IEEE_RIS_Dir/IEEE_Xplore_' + fileName + '.ris', 'a+', encoding='utf-8') as f:
                 f.write(rif_output)
             print("Downloading Files : " + str(i + 1) + " out of " + str(self.totalPage))
             time.sleep(2)
-        print("Finish Operation. Files Generated in IEEE_RIS_Dir")
+        print('Merging files')
+        time.sleep(1)
+        print("Successful! Files Path: IEEE_RIS_Dir/IEEE_Xplore_" + fileName + '.ris')
         print("Removing temp files")
         shutil.rmtree("json_temp")
-        print("===========Job Done==========")
+        time.sleep(1)
+        print("Successful!")
+        print("===========+++Job Done+++==========")
         return
 
     # Search json files from IEEE Xplore website
