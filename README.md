@@ -8,15 +8,15 @@ An Object-oriented paper search crawler
 
 ## Features:
 
-1. You can search papers via command line interactions
-2. You can search papers on IEEE Xplore Search Engine
-3. It will return a *.ris file contain all the result paper
+1. You can search paper via command-line interactions
+2. You can search paper on IEEE Xplore Search Engine
+3. It will return a *.ris file contains all the paper info
 
 ## To be fixed:
 
 1. Auto Cookie Fetch will be added in the future
 2. More paper search engine will be added in the future (PubMed | ACM Digit Library)
-3. Web based script will be added in the future
+3. A Web-based script will be added in the future
 
 ## How to Use :
 
