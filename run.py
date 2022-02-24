@@ -1,4 +1,5 @@
 import IEEE_Xplore_Spider as ixs
+import sys
 
 if __name__ == '__main__':
     while (True):
@@ -16,7 +17,7 @@ if __name__ == '__main__':
         print("4. Exit")
         search_engine = input("Pls type pure number: \n")
         if (search_engine == '4'):
-            SystemExit()
+            sys.exit()
 
         elif (search_engine == '1'):
             while (True):
